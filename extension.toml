@@ -1,0 +1,19 @@
+id = "unreal-cpp"
+name = "Unreal C++"
+description = "Automatic Unreal Engine C++ navigation for macOS, powered by UBT and clangd."
+version = "0.1.0"
+schema_version = 1
+authors = ["Jie Weng"]
+
+[language_servers.unreal-clangd]
+name = "Unreal clangd"
+languages = ["C++", "C"]
+language_ids = { "C++" = "cpp", "C" = "c" }
+
+# Zed resolves its Node runtime to a machine-dependent absolute path.
+# Capabilities accept exact strings or "*", not path globs; three arguments
+# are the embedded helper path, worktree root, and JSON settings.
+[[capabilities]]
+kind = "process:exec"
+command = "*"
+args = ["*", "*", "*"]
