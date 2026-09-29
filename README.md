@@ -1,3 +1,5 @@
+[English](README.en.md) | [中文](README.md)
+
 # Unreal C++ for Zed
 
 在 macOS 上自动准备 Unreal Engine C++ 项目，提供语法/语义高亮、定义跳转、引用查询和真实的编译诊断。使用 Zed 内置 C++ Tree-sitter、UE 的 UnrealBuildTool / UnrealHeaderTool，以及当前 Xcode 的 clangd。
